@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/logn.css">
+    <link rel="shortcut icon" href="img/nigeria" type="image/x-icon">
+    <title>voting website</title>
+</head>
+<body>
+    <div class="first-container">
+        <h1>Register here for 2024 Election</h1>
+    </div>
+    <div class="container">
+        <div class="first">
+          <center> <img src="img/nigeria" alt=""> </center>
+           <form action="option.html">
+            <input type="text" placeholder="first name" required id=""><br>
+            <input type="text" placeholder="last name" required id=""><br>
+            <input type="text" placeholder="middle namer" required id=""><br>
+            <input type="email" required placeholder="Enter your email"><br>
+            <input type="date" placeholder="birthdate" name="" id="">
+            <input type="number" required placeholder="NIN Number" id=""><br>
+            <input type="password" required placeholder="create password" id="password"><br> 
+          <div class="show"><input type="checkbox"  id="show"><label for="show" class="click"></label><p>show password</p></div>  
+          <center><button type="submit">Register</button></center> 
+           </form>
+           <p>Already had an account?<a href="#">sign in to vote</a> </p>
+        </div>
+    </div>
+</body>
+<script>
+  const password=  document.getElementById("password");
+ const show=   document.getElementById("show");
+ show.addEventListener("click",function(){
+    if(password.type=="text")
+    password.type="password"
+    else{
+    password.type="text"
+ }})
+
+</script>
+</html>

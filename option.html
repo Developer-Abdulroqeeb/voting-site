@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/option.css">
+    <link rel="shortcut icon" href="img/nigeria" type="image/x-icon">
+    <title>select vote</title>
+    <style>
+    </style>
+</head>
+<body>
+   
+    <div class="header-cont">
+    <div class="header">
+        <p>Welcome Lawal Abdulroqeeb you have Successfully Registered for 2024 Election</p>
+    </div>
+</div>
+  <div class="container">
+    <div class="right-container" id="list">
+        <div class="profile">
+        <img src="img/icon2.png"/><br>
+       <input type="file" placeholder="merchant">
+     
+    </div>
+    <div class="registration">
+        <a href="profile.html"><i class="fa fa-user"></i>profile
+        </a> 
+     </div>
+    <div class="registration">
+       <a href="register.html"><i class="fa fa-registered"></i>Pollen Pin
+       </a> 
+    </div>
+    <div class="registration">
+        <a href="candidat.html"><i class="fa fa-people-group"></i>Check Candidate
+        </a> 
+     </div>
+     <div class="registration">
+        <a href="parties.html"><i class="fa-brands fa-42-group"></i>Check parties 
+        </a> 
+     </div>
+          <div class="registration">
+        <a href=""><i class="fa fa-box"></i>ballot
+        </a> 
+     </div>
+     <div class="registration">
+      <a href="card.html"><i class="fa-solid fa-id-card"></i>Voters Id Card
+      </a> 
+   </div>
+    <div class="registration">
+      <a href="https://mail.google.com/mail/u/0/?pli=1#inbox"><i class="fa fa-envelope"></i>Mail Notification
+      </a> 
+   </div>
+    <div class="registration">
+      <a href="logiin.html"><i class="fa fa-right-from-bracket"></i>Log Out
+      </a> 
+   </div>
+    </div>
+    <div class="left-container">
+      <div class="dashboard">
+      <div class="side-logo">
+      <img src="img/nigeria" alt="">
+    </div>
+    <div class="menu">
+      <a href="option.html"><i class="fa fa-home"></i></a>
+      <a href="#"><i class="fa-regular fa-bell"></i></a>
+      <a href="help.html"><i class="fa-solid fa-circle-question"></i></a>
+      <i class="fa fa-bars" id="menu"></i>
+    </div>
+  </div>
+  <div class="news-letter">
+    <h3>Latest News On Election:</h3>
+    <marquee behavior="" scrollamount="1" direction="Up"><p>INEC Chairman Professor Mahmood Yakubu
+       has stated in his speech lastweek that 
+       the use of E-goverment in Election would 
+       Reduce the rate of Political Apathy for people who 
+       are afraid of the Riot been done by 
+       some bad people in the contry during 
+       Election </p></marquee>
+  </div>
+  <h2>Select Election type</h2>
+
+<div class="election-type">
+  <a href="verify.html">Presidential Election</a>
+  <a href="goverify.html">Governorship Election</a>
+  <a href="#">Senatorial Election</a>
+  <a href="#">House Of Representatives</a>
+  <a href="#">State House Of Assembly</a>
+  <a href="#">Local Government Chairmen</a>
+  <a href="#">Local Government councils</a>
+</div>
+</div>
+</div>
+</body>
+<script>
+  // alert("welcome to your voting site");
+      const image=document.querySelector("img");
+    input = document.querySelector("input");
+    input.addEventListener("change", ()=>{
+        image.src=URL.createObjectURL(input.files[0]);
+    });
+
+  const menu = document.querySelector('#menu');
+  const list = document.querySelector('#list');
+
+  menu.addEventListener('click', function () {
+  list.classList.toggle('show');
+  });
+</script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        .header{
+            background-color: green;
+            color: white;
+            padding: 7px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 9rem;
+
+        }
+        form{
+            background-color: green;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            width: 30%;
+            gap: 20px;
+        }
+        input{
+            padding: 7px;
+            background-color: white;
+            border-radius: 7px;
+            border: 0;
+            outline: 0;
+        }
+         button{
+            background-color:white;
+            border-radius: 15px;
+            border: 0;
+            width: 20%;
+         }
+         @media (max-width:767px) {
+          form{
+            width: 80%;
+          } 
+         }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Verify Yourself</h2>
+    </div>
+    <div class="container">
+        <form action="president.html">
+            <input  required type="number" placeholder="Voters Id Card Number" name="" id="">
+            <input required   type="text" placeholder="Registration pin">
+          <center><button type="submit">submit</button></center>  
+        </form>
+    </div>
+</body>
+</html>
